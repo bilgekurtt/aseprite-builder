@@ -67,7 +67,7 @@ jobs:
       - name: Compile with Ninja
         run: |
           cd build
-          ninja
+          ninja -j 2
 
       - name: Collect Dependencies (DLLs)
         shell: powershell
